@@ -3,7 +3,7 @@ import { DeepSignal } from './deep-signal';
 import { StateSignal } from './state-signal';
 import { IsKnownRecord, Prettify } from './ts-helpers';
 
-export type SignalStoreConfig = { providedIn: 'root' };
+export type SignalStoreConfig = { providedIn: 'root' } | { providedIn: 'any' };
 
 export type SignalStoreSlices<State> = IsKnownRecord<
   Prettify<State>
